@@ -1,0 +1,83 @@
+{% extends "basic.html" %} {% block title %} About{% endblock title %} 
+{% block body %} {% load static %}
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About</h2>
+      <p>
+        Hi! I'm a new computer engineer, eager to dive into the world of tech. I enjoy problem-solving and unleashing creativity. Whether it's tackling coding puzzles or exploring software solutions, I'm excited to learn and make a difference. Join me on this journey of discovery and innovation!
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <img
+          src="{% static 'assets/img/about-me.png' %}"
+          class="img-fluid long-image"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>Computer Engineer</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Name:</strong>
+                <span>Biru NAyak</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <strong>skills:</strong>Python programming,web Development<span
+                ></span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
+                <span>9807710061</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                <span>Kathmandu</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <strong>Experience:</strong>Internship on AI project<span
+                ></span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+                <span>Bachelor</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                <span>birunayak0758@.com</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Hobbies:</strong>
+                <span>Reading, Like eating new food</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          "In the world of computer engineering, there are many paths to choose
+          from, each with its own challenges and rewards. As a new face in this
+          field, I'm excited to dive into the opportunities ahead. Learning and
+          growing in computer engineering isn't always easy. There are tough
+          moments, but they're all part of the journey to becoming better at
+          what we do. I love diving into coding and tinkering with circuits,
+          always eager to learn something new. Every problem I solve and project
+          I work on fuels my passion for technology. Even though the road ahead
+          might seem uncertain, I'm determined to give it my all. Let's explore
+          together as we shape the future of technology!"
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
