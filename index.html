@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="https://kit.fontawesome.com/9a2622cd47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"  class="logo"><img src="/assets/images/logo.png"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Engineer</p>
+                <h1>Hi, I'm <span>Biru</span><br>Nayak from Bhaktapur, Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about--------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/images/about-me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm a new computer engineer, eager to dive into the world of tech. 
+                        I enjoy problem-solving and unleashing creativity.
+                         Whether it's tackling coding puzzles or exploring software solutions, 
+                        I'm excited to learn and make a difference. 
+                        Join me on this journey of discovery 
+                        and innovation!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python, Java</li>
+                                <li><span>Artificial Intelligence</span><br>Machine Learning, Deep Learning</li>
+                                <li><span>Web Development</span><br>HTML, CSS, Javascript, Django Framework</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>June 2024 - July 2024</span><br>Junior Software Developer at HiTech Solutions & Services Pvt Ltd,
+                                    Kalimati, Kathmandu, Nepal<br></li>
+                                <li><span>May 2023 - February 2024</span><br>Artifical Intelligence in HealthCare at BP Eye Foundation,
+                                    Madhyapur Thimi, Bhaktapur, Nepal<br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>Web Design, BroadwayInfosys</li>
+                                <li><span>2024</span><br>Bachelor's Degree in Computer Engineering from Kathford
+                                    International College of Engineering & Management, Balkumari,
+                                    Lalitpur, Nepal, (Tribhuvan University)</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------Services-------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list"></div>
+        </div>
+    </div>
+
+    <!-- ----------------------------portfolio---------------------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list"></div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+
+     <!-- --------------------------------contact------------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>birunayak1234@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9807710061</p>
+                    <div class="social-ions">
+                        <a href="https://www.facebook.com/biru.nayak.986/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/biru-nayak/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/BiruNayak" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/assets/resume/resume-biru.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Your Messsge"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright Biru Nayak Designed by <i class="fa-solid fa-heart"></i> Biru Nayak</p>
+        </div>
+      </div>
+
+      <script type="module" src="/assets/js/index.js"></script>
+
+</body>
+</html>

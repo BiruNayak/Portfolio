@@ -1,0 +1,16 @@
+/* Import Global Styles */
+@import url('./main.css');
+
+/* Import Component Styles */
+@import url('./components/header.css');
+@import url('./components/navigation.css');
+@import url('./components/footer.css');
+
+/* Import Section Styles */
+@import url('./sections/about.css');
+@import url('./sections/services.css');
+@import url('./sections/portfolio.css');
+@import url('./sections/contact.css');
+
+/* Import Responsive Styles */
+@import url('./responsive/mobile.css');
